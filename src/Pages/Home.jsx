@@ -4,7 +4,7 @@ import Prices from '../components/Prices'
 
 const Home = () => {
   return (
-    <div >
+    <div className='flex-container' >
       <Graph/>
       <Prices/>
     </div>

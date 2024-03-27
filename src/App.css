@@ -79,6 +79,20 @@ main {
   border-radius: 0.5rem;
 }
 
+/* meidum screens */
+@media all and (min-width: 525px) and (max-width: 1024px) {
+  .population-graph-container {
+    width: fit-content;
+  
+  }
+}
+
+@media all and (min-width: 280px) and (max-width: 767px) {
+  body {
+    width: fit-content;
+  }
+}
+
 /* <--- Display Cryptocurrency Prices ----> */
 
 .prices-card-container {
@@ -122,3 +136,20 @@ main {
   margin: 0.5rem 0;
   font-size: 2rem;
 }
+
+/* meidum screens */
+@media all and (max-width: 800px) {
+  .prices-card {
+    width: 100%;
+    /* background-color: pink; */
+  }
+}
+
+/* Home page */
+
+/* .flex-container {
+  display: flex;
+  border: 1px solid white;
+  flex-direction: column;
+  align-items: center;
+} */
