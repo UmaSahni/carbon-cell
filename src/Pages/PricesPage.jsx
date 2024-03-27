@@ -1,14 +1,12 @@
 import React from 'react'
-import Graph from '../components/Graph'
 import Prices from '../components/Prices'
 
-const Home = () => {
+const PricesPage = () => {
   return (
-    <div >
-      <Graph/>
+    <div>
       <Prices/>
     </div>
   )
 }
 
-export default Home
+export default PricesPage

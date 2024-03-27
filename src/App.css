@@ -78,3 +78,47 @@ main {
   padding: 0.5rem;
   border-radius: 0.5rem;
 }
+
+/* <--- Display Cryptocurrency Prices ----> */
+
+.prices-card-container {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.prices-card {
+  width: 25%;
+  min-width: 300px;
+  padding: 0.8rem;
+  background-color: rgb(38, 38, 38);
+  border-radius: 0.5rem;
+  margin: 1rem 0;
+}
+
+.top_section_prices {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top_section_prices>p {
+  font-size: 2rem;
+  background-color: limegreen;
+  padding: 1rem 1.8rem;
+  border: 2px solid wheat;
+  border-radius: 50%;
+  width: 5%;
+}
+
+.middle_section_prices {
+  padding-top: 2rem;
+}
+
+.rate {
+  margin: 0.5rem 0;
+  font-size: 2rem;
+}
