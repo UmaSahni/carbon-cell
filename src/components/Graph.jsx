@@ -22,17 +22,25 @@ ChartJS.register(
   Legend
 );
 
-const Graph = () => {
-  const [data, setData] = useState([])
+// Feching data for Population and Crypto-currency 
+export const getData =  (url) => {
+   return fetch(url)
+}
 
-  const getData = () =>{
-    fetch(`https://datausa.io/api/data?drilldowns=Nation&measures=Population`)
+const Graph = () => {
+
+const [data, setData] = useState([])
+
+useEffect(()=>{
+    getData("https://datausa.io/api/data?drilldowns=Nation&measures=Population")
     .then((res)=>res.json())
     .then((data)=>setData(data.data))
     .catch((err)=>console.log(err))
-  }
+},[])
 
-  const chartData = {
+
+// Chart.js config
+const chartData = {
           labels: data.map((el) => el.Year),
           datasets: [
             {
@@ -46,29 +54,39 @@ const Graph = () => {
           ],
         }
   
-  const chartOptions = {
-          scales: {
-            x: {
-              title: {
-                display: true,
-                text: "Year",
-                color: "#b2b2b2",
-              },
-            },
-            y: {
-              title: {
-                display: true,
-                text: "Population",
-                color: "#b2b2b2",
-              },
-            },
-          },
-        }
+const chartOptions = {
+    scales: {
+      x: {
+        title: {
+          display: true,
+          text: "Year",
+          color: "white", 
+        },
+        ticks: {
+          color: "white", 
+        },
+      },
+      y: {
+        title: {
+          display: true,
+          text: "Population",
+          color: "white", 
+        },
+        ticks: {
+          color: "white", 
+        },
+      },
+    },
+    plugins: {
+      legend: {
+        labels: {
+          color: "white", 
+        },
+      },
+    },
+  };
 
 
-  useEffect(()=>{
-    getData()
-  },[])
   
   return (
     <div className="population-graph-container">

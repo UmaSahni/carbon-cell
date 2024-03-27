@@ -13,7 +13,7 @@ const Sidebar = ({ children }) => {
   const menuItem = [
     {
       path: "/",
-      name: "Home",
+      name: "Dashboard",
       icon: <AiFillHome />,
     },
     {
