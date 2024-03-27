@@ -4,7 +4,7 @@ import Prices from '../components/Prices'
 const About = () => {
  
   return (
-    <div>
+    <div className='flex-container' >
       About
     </div>
   )
