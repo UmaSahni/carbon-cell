@@ -10,7 +10,7 @@ useEffect(()=>{
     .then((res)=>res.json())
     .then((data)=>setData(data.bpi))
     .catch((err)=>console.log(err))
-})
+},[])
 
   return (
     <div className='prices-card-container' >

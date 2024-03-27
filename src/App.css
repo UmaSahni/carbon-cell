@@ -171,8 +171,59 @@ main {
 }
 
 @media all and (max-width: 800px) {
-  .flex-container  {
+  .flex-container {
     margin-left: 4rem;
   }
 }
 
+button {
+  background-color: limegreen;
+  padding: 0.7rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.5s;
+  border: 2px solid gold;
+  color: #000000;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: rgb(3, 165, 3);
+}
+
+.center-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  flex-direction: column;
+}
+
+.flex-home {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem
+}
+
+.center-flex {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: auto;
+  padding: 0.5rem;
+  /* border: 2px solid red; */
+  /* min-width: 300px; */
+  background-color: rgb(38, 38, 38);
+  border-radius: 0.5rem;
+  flex: 1;
+}
+
+.center-flex>img {
+  max-width: 100%;
+  /* Ensures the image never exceeds its container's width */
+  height: auto;
+  /* Maintains the aspect ratio */
+  border: "1px solid green";
+}

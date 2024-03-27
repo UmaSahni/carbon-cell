@@ -1,15 +1,22 @@
-import React from 'react'
+import React from "react";
+import WalletConnect from "../components/WalletConnect";
 
 const Wallet = () => {
   return (
     <div className="flex-container">
-      <h1>Wallet page is here</h1>
+      <div className="center-box">
+        <img src="/metamask.svg" alt="" />
+      <div>
+      <h1>Try to connect to Meta Mask</h1>
       <br></br>
       <br></br>
-
-      <h2>Coming soon...</h2>
+      </div>
+      <div>
+      <WalletConnect />
+      </div>
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Wallet
+export default Wallet;
