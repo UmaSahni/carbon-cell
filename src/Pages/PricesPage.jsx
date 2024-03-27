@@ -3,7 +3,7 @@ import Prices from '../components/Prices'
 
 const PricesPage = () => {
   return (
-    <div>
+    <div className='flex-container' >
       <Prices/>
     </div>
   )
