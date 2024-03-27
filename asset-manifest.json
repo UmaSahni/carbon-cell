@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/carbon-cell/static/css/main.509533b0.css",
+    "main.js": "/carbon-cell/static/js/main.6d2ce400.js",
+    "static/js/453.1dfceca2.chunk.js": "/carbon-cell/static/js/453.1dfceca2.chunk.js",
+    "index.html": "/carbon-cell/index.html",
+    "main.509533b0.css.map": "/carbon-cell/static/css/main.509533b0.css.map",
+    "main.6d2ce400.js.map": "/carbon-cell/static/js/main.6d2ce400.js.map",
+    "453.1dfceca2.chunk.js.map": "/carbon-cell/static/js/453.1dfceca2.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.509533b0.css",
+    "static/js/main.6d2ce400.js"
+  ]
+}
